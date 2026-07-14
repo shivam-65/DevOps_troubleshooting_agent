@@ -21,6 +21,17 @@ An AI-powered incident management system that automates production incident inve
                      └─────────────────┘  └──────────────┘   └──────────────┘
 ```
 
+## Screenshots
+
+### Dashboard UI
+![Dashboard UI](image/Dashboard.png)
+
+### Incident Investigation UI
+![Incident Investigation UI](image/incident.png)
+
+### Actions UI
+![Actions UI](image/Actions.png)
+
 ## Components
 
 ### 1. Backend (Spring Boot)
