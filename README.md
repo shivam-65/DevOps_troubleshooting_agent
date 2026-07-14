@@ -59,7 +59,7 @@ An AI-powered incident management system that automates production incident inve
   - Determines root cause with confidence score
   - Generates remediation recommendations
 
-**Port:** 8000
+**Port:** 8002
 
 ### 4. Simulator
 - Simulate production services
@@ -207,7 +207,7 @@ python src/main.py
 **Step 4: Access the application**
 - Frontend Dashboard: http://localhost:3000
 - Backend API: http://localhost:8080
-- AI Service: http://localhost:8000
+- AI Service: http://localhost:8002
 - Simulator: http://localhost:8001 (optional)
 
 ## Usage
@@ -245,7 +245,7 @@ Approve and execute recommended actions through the UI or API.
 - API endpoints documented in specification
 
 ### AI Service API
-- FastAPI docs: http://localhost:8000/docs
+- FastAPI docs: http://localhost:8002/docs
 - gRPC service definition in protobuf files
 
 ### Simulator API
@@ -311,7 +311,7 @@ Use the simulator to generate failure scenarios and test the complete investigat
 4. **Frontend:** Access dashboard at `http://localhost:3000`
 5. **Backend:** API available at `http://localhost:8080`
 6. **H2 Console:** Database console available at `http://localhost:8080/h2-console`
-7. **AI Service:** Available at `http://localhost:8000`
+7. **AI Service:** Available at `http://localhost:8002`
 8. **Simulator:** Create failure scenarios via simulator API at `http://localhost:8001` (optional)
 8. **Testing:** Use simulator to generate incidents and test AI analysis workflow
 

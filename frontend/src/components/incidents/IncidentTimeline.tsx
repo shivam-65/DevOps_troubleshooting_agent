@@ -17,19 +17,19 @@ const iconMap: Record<string, React.ReactNode> = {
 export function IncidentTimeline({ events }: { events: TimelineEvent[] }) {
   if (!events.length) return null;
   return (
-    <div className="space-y-0">
+    <div className="space-y-0 w-full">
       {events.map((event, i) => (
-        <div key={event.id} className="flex gap-3 relative">
+        <div key={event.id} className="flex gap-3 relative min-w-0">
           <div className="flex flex-col items-center">
             <div className="flex items-center justify-center w-7 h-7 rounded-full bg-muted border border-border">
               {iconMap[event.type] || <Circle className="h-3.5 w-3.5 text-muted-foreground" />}
             </div>
             {i < events.length - 1 && <div className="w-px flex-1 bg-border my-1" />}
           </div>
-          <div className="pb-4 pt-0.5">
-            <p className="text-sm font-medium text-foreground">{event.title}</p>
-            {event.description && <p className="text-xs text-muted-foreground mt-0.5">{event.description}</p>}
-            <p className="text-xs text-muted-foreground mt-1">{format(new Date(event.timestamp), 'MMM d, yyyy HH:mm:ss')}</p>
+          <div className="pb-4 pt-0.5 min-w-0">
+            <p className="text-sm font-medium text-foreground break-words">{event.title}</p>
+            {event.description && <p className="text-xs text-muted-foreground mt-0.5 break-words">{event.description}</p>}
+            <p className="text-xs text-muted-foreground mt-1 whitespace-nowrap">{format(new Date(event.timestamp), 'MMM d, yyyy HH:mm:ss')}</p>
           </div>
         </div>
       ))}

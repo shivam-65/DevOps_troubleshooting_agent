@@ -1212,13 +1212,13 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 ### 8.1 AI Service Client
 
-**Target:** `http://localhost:8000` (Python FastAPI)
+**Target:** `http://localhost:8002` (Python FastAPI)
 **Transport:** HTTP via Spring `WebClient` (non-blocking)
 
 #### Start Investigation
 
 ```
-POST http://localhost:8000/api/investigate
+POST http://localhost:8002/api/investigate
 ```
 
 **Request:**
@@ -1504,7 +1504,7 @@ logging:
 
 # --- External Services ---
 ai-service:
-  base-url: http://localhost:8000
+  base-url: http://localhost:8002
   timeout:
     connect: 5s
     read: 300s            # AI investigation can take minutes

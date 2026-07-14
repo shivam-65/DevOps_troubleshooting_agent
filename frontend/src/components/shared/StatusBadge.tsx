@@ -18,7 +18,7 @@ const statusStyles: Record<string, string> = {
 export function StatusBadge({ status, className }: { status: string; className?: string }) {
   return (
     <span className={cn(
-      'inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium border',
+      'inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium border max-w-full truncate',
       statusStyles[status] || 'bg-zinc-500/10 text-zinc-400 border-zinc-500/30',
       className
     )}>

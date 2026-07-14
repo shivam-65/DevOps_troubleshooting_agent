@@ -45,11 +45,11 @@ cp .env.example .env
 python src/main.py
 ```
 
-Service starts on **http://localhost:8000**
+Service starts on **http://localhost:8002**
 
 ### 4. API Documentation
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
+- Swagger UI: http://localhost:8002/docs
+- ReDoc: http://localhost:8002/redoc
 
 ## API Endpoints
 
@@ -66,7 +66,7 @@ Service starts on **http://localhost:8000**
 | GEMINI_MODEL | No | gemini-1.5-flash | Gemini model |
 | BACKEND_BASE_URL | No | http://localhost:8080 | Backend API URL |
 | LOG_LEVEL | No | INFO | Logging level |
-| PORT | No | 8000 | Server port |
+| PORT | No | 8002 | Server port |
 
 ## Testing
 

@@ -179,7 +179,7 @@ ai-service/
 
 ## 4. API Specification
 
-**Base URL:** `http://localhost:8000`
+**Base URL:** `http://localhost:8002`
 
 ---
 
@@ -297,9 +297,9 @@ ai-service/
 ### 4.3 API Documentation
 
 **Endpoints:**
-- Swagger UI: `http://localhost:8000/docs`
-- ReDoc: `http://localhost:8000/redoc`
-- OpenAPI JSON: `http://localhost:8000/openapi.json`
+- Swagger UI: `http://localhost:8002/docs`
+- ReDoc: `http://localhost:8002/redoc`
+- OpenAPI JSON: `http://localhost:8002/openapi.json`
 
 ---
 
@@ -831,7 +831,7 @@ When investigation fails, callback payload:
 | ADAPTER_TIMEOUT | No | 30 | Adapter HTTP timeout (seconds) |
 | GEMINI_TIMEOUT | No | 120 | Gemini API timeout (seconds) |
 | MAX_RETRIES | No | 3 | Max retry attempts |
-| PORT | No | 8000 | Server port |
+| PORT | No | 8002 | Server port |
 
 ### 11.2 Settings Class (Pydantic Settings)
 
@@ -849,7 +849,7 @@ Settings:
   retry_backoff_base: float = 1.0
   
   log_level: str = "INFO"
-  port: int = 8000
+  port: int = 8002
 ```
 
 ### 11.3 Example .env File
@@ -859,7 +859,7 @@ GEMINI_API_KEY=your-gemini-api-key-here
 GEMINI_MODEL=gemini-1.5-pro
 BACKEND_BASE_URL=http://localhost:8080
 LOG_LEVEL=DEBUG
-PORT=8000
+PORT=8002
 ```
 
 ---

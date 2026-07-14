@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     retry_backoff_base: float = Field(default=1.0)
 
     log_level: str = Field(default="INFO")
-    port: int = Field(default=8000)
+    port: int = Field(default=8002)
 
     class Config:
         env_file = _ENV_FILE
